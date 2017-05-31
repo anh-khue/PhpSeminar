@@ -2,22 +2,23 @@
 $pageHeader = "Full Catalog";
 $section    = null;
 
-include "inc/header.php";
 include "inc/data.php";
 include "inc/functions.php";
 
 if (isset($_GET["cat"])) {
 	if ($_GET["cat"] == "books") {
-		$section = "Books";
+		$section    = "Books";
 		$pageHeader = "Books";
 	} elseif ($_GET["cat"] == "movies") {
-		$section = "Movies";
+		$section    = "Movies";
 		$pageHeader = "Movies";
 	} elseif ($_GET["cat"] == "music") {
-		$section = "Music";
+		$section    = "Music";
 		$pageHeader = "Music";
 	}
 }
+
+include "inc/header.php";
 ?>
 
 <div class="section page catalog">

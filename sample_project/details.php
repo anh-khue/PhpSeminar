@@ -23,14 +23,10 @@ include "inc/functions.php";
             <a href="catalog.php">Full Catalog</a>
             /
             <a href="catalog.php?cat=<?php echo strtolower($item["category"]); ?>">
-				<?php
-				echo $item["category"];
-				?>
+				<?php echo $item["category"]; ?>
             </a>
             /
-			<?php
-			echo $item["title"];
-			?>
+			<?php echo $item["title"]; ?>
         </div>
 
         <!-- Item Image -->
@@ -44,9 +40,7 @@ include "inc/functions.php";
         <!-- Item Details -->
         <div class="media-details">
             <h1>
-				<?php
-				echo $item["title"];
-				?>
+				<?php echo $item["title"]; ?>
             </h1>
             <table>
                 <tr>
@@ -54,9 +48,7 @@ include "inc/functions.php";
                         Category
                     </th>
                     <td>
-						<?php
-						echo $item["category"];
-						?>
+						<?php echo $item["category"]; ?>
                     </td>
                 </tr>
                 <tr>
@@ -64,9 +56,7 @@ include "inc/functions.php";
                         Genre
                     </th>
                     <td>
-						<?php
-						echo $item["genre"];
-						?>
+						<?php echo $item["genre"]; ?>
                     </td>
                 </tr>
                 <tr>
@@ -74,9 +64,7 @@ include "inc/functions.php";
                         Format
                     </th>
                     <td>
-						<?php
-						echo $item["format"];
-						?>
+						<?php echo $item["format"]; ?>
                     </td>
                 </tr>
                 <tr>
@@ -84,22 +72,16 @@ include "inc/functions.php";
                         Year
                     </th>
                     <td>
-						<?php
-						echo $item["year"];
-						?>
+						<?php echo $item["year"]; ?>
                     </td>
                 </tr>
-				<?php
-				if ($item["category"] == "Books") {
-					?>
+				<?php if ($item["category"] == "Books") : ?>
                     <tr>
                         <th>
                             Authors
                         </th>
                         <td>
-							<?php
-							echo implode(", ", $item["authors"]);
-							?>
+							<?php echo implode(", ", $item["authors"]); ?>
                         </td>
                     </tr>
                     <tr>
@@ -107,9 +89,7 @@ include "inc/functions.php";
                             Publisher
                         </th>
                         <td>
-							<?php
-							echo $item["publisher"];
-							?>
+							<?php echo $item["publisher"]; ?>
                         </td>
                     </tr>
                     <tr>
@@ -117,22 +97,16 @@ include "inc/functions.php";
                             Isbn
                         </th>
                         <td>
-							<?php
-							echo $item["isbn"];
-							?>
+							<?php echo $item["isbn"]; ?>
                         </td>
                     </tr>
-					<?php
-				} elseif ($item["category"] == "Movies") {
-					?>
+				<?php elseif ($item["category"] == "Movies") : ?>
                     <tr>
                         <th>
                             Director
                         </th>
                         <td>
-							<?php
-							echo $item["director"];
-							?>
+							<?php echo $item["director"]; ?>
                         </td>
                     </tr>
                     <tr>
@@ -140,9 +114,7 @@ include "inc/functions.php";
                             Writers
                         </th>
                         <td>
-							<?php
-							echo implode(", ", $item["writers"]);
-							?>
+							<?php echo implode(", ", $item["writers"]); ?>
                         </td>
                     </tr>
                     <tr>
@@ -150,27 +122,19 @@ include "inc/functions.php";
                             Stars
                         </th>
                         <td>
-							<?php
-							echo implode(", ", $item["stars"]);
-							?>
+							<?php echo implode(", ", $item["stars"]); ?>
                         </td>
                     </tr>
-					<?php
-				} elseif ($item["category"] == "Music") {
-					?>
+				<?php elseif ($item["category"] == "Music") : ?>
                     <tr>
                         <th>
                             Artist
                         </th>
                         <td>
-							<?php
-							echo $item["artist"];
-							?>
+							<?php echo $item["artist"]; ?>
                         </td>
                     </tr>
-					<?php
-				}
-				?>
+				<?php endif; ?>
             </table>
         </div>
 
