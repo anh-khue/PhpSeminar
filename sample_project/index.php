@@ -1,30 +1,25 @@
 <?php
-$pageHeader = "Media Store";
-
-include "inc/header.php";
-include "inc/data.php";
-include "inc/functions.php";
+$title="Media Library";
+$section=null;
+include_once "inc/header.php";
+include_once "inc/data.php";
+include_once "inc/functions.php";
 ?>
-
     <div class="section catalog random">
-
+        <h1 class="catalog-title">May we suggest something ?</h1>
         <div class="wrapper">
-
-            <h2>May we suggest something?</h2>
-
             <ul class="items">
-				<?php
-				$randomArray = array_rand($catalog, 4);
-				foreach ($randomArray as $id) {
-					echo getItem($id, $catalog[ $id ]);
-				}
-				?>
+                <?php
+                $random=array_rand($catalog,8);
+                foreach ($random as $id){
+                    echo getThumbnail($id,$catalog[$id]);
+                }
+                ?>
             </ul>
-
         </div>
 
     </div>
+</div>
 
-<?php
-include "inc/footer.php";
-?>
+<!---FOOTER--->
+<?php include_once "inc/footer.php";?>

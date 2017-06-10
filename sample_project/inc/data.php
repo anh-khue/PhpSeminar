@@ -48,7 +48,7 @@ $catalog[104] = [
     "year" => 2011,
     "category" => "Books",
     "authors" => [
-	    "Robert C. Martin"
+        "Robert C. Martin"
     ],
     "publisher" => "Prentice Hall",
     "isbn" => '007-6092046981'
@@ -61,16 +61,16 @@ $catalog[201] = [
     "format" => "DVD",
     "year" => 2017,
     "category" => "Movies",
-    "director" => "Robert Zemeckis",
+    "director" => "Gary Trousdale",
     "writers" => [
-        "Winston Groom",
-        "Eric Roth"
+        "Stephen Chbosky",
+        " Evan Spiliotopoulos"
     ],
     "stars" => [
-        "Tom Hanks",
-        "Rebecca Williams",
-        "Sally Field",
-        "Michael Conner Humphreys"
+        "Emma Watson",
+        "Dan Stevens",
+        "Luke Evans",
+        "Josh Gad",
     ]
 ];
 $catalog[202] = [
@@ -80,15 +80,15 @@ $catalog[202] = [
     "format" => "Blu-ray",
     "year" => 2017,
     "category" => "Movies",
-    "director" => "Mike Judge",
+    "director" => "Tom McGrath",
     "writers" => [
-        "William Goldman"
+        "Michael McCullers",
+        "Marla Frazee",
     ],
     "stars" => [
-        "Ron Livingston",
-        "Jennifer Aniston",
-        "David Herman",
-
+        "Alec Baldwin",
+        "Steve Buscemi",
+        "Jimmy Kimmel",
     ]
 ];
 $catalog[203] = [
@@ -98,17 +98,15 @@ $catalog[203] = [
     "format" => "Blu-ray",
     "year" => 2017,
     "category" => "Movies",
-    "director" => "Peter Jackson",
+    "director" => "F. Gary Gray",
     "writers" => [
-        "J.R.R. Tolkien",
-        "Fran Walsh",
-        "Philippa Boyens",
-        "Peter Jackson"
+        "Chris Morgan",
+        "Gary Scott Thompson",
     ],
     "stars" => [
-        "Ron Livingston",
-        "Jennifer Aniston",
-        "David Herman",
+        "Vin Diesel",
+        "Jason Statham",
+        "Dwayne Johnson",
     ]
 ];
 $catalog[204] = [
@@ -118,14 +116,15 @@ $catalog[204] = [
     "format" => "DVD",
     "year" => 2017,
     "category" => "Movies",
-    "director" => "Rob Reiner",
+    "director" => "James Mangold",
     "writers" => [
-        "William Goldman"
+        "James Mangold",
+        "Scott Frank",
     ],
     "stars" => [
-        "Cary Elwes",
-        "Mandy Patinkin",
-        "Robin Wright",
+        "Hugh Jackman",
+        "Patrick Stewart",
+        "Dafne Keen",
     ]
 ];
 //Music
@@ -152,9 +151,9 @@ $catalog[303] = [
     "img" => "img/media/payphone.png",
     "genre" => "Rock",
     "format" => "Cassette",
-    "year" => 1990,
+    "year" => 2010,
     "category" => "Music",
-    "artist" => "Garth Brooks"
+    "artist" => "Maroon 5"
 ];
 $catalog[304] = [
     "title" => "Until You",

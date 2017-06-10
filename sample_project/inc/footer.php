@@ -1,19 +1,17 @@
-</div> <!-- end content -->
-
 <div class="footer">
 
-    <div class="wrapper">
-
-        <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-        </ul>
-
-        <p>&copy;<?php echo date('Y'); ?> BMAG R&D</p>
-
-    </div>
+    <ul>
+        <li>
+            <a href="#">Twitter</a>
+        </li>
+        <li>
+            <a href="#">
+                Facebook
+            </a>
+        </li>
+    </ul>
+    <p>&copy;2015 Personal Media Library</p>
 
 </div>
-
 </body>
 </html>

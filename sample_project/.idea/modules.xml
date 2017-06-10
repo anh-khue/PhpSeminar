@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/phpseminar.iml" filepath="$PROJECT_DIR$/.idea/phpseminar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyTreeHouse.iml" filepath="$PROJECT_DIR$/.idea/MyTreeHouse.iml" />
     </modules>
   </component>
 </project>

@@ -1,52 +1,38 @@
 <?php
-$pageHeader = "Full Catalog";
-$section    = null;
-
 include "inc/data.php";
+$title = "Full Catalog";
+$section = null;
+if (isset($_GET["cat"])) {
+    $cat = $_GET["cat"];
+    if ($cat == "books") {
+        $title = "Books";
+        $section = "books";
+    } else if ($cat == "movies") {
+        $title = "Movies";
+        $section = "movies";
+    } else if ($cat == "music") {
+        $title = "Music";
+        $section = "music";
+    }
+}
+include "inc/header.php";
 include "inc/functions.php";
 
-if (isset($_GET["cat"])) {
-	if ($_GET["cat"] == "books") {
-		$section    = "Books";
-		$pageHeader = "Books";
-	} elseif ($_GET["cat"] == "movies") {
-		$section    = "Movies";
-		$pageHeader = "Movies";
-	} elseif ($_GET["cat"] == "music") {
-		$section    = "Music";
-		$pageHeader = "Music";
-	}
-}
-
-include "inc/header.php";
 ?>
 
-<div class="section page catalog">
 
+<div class="section catalog page">
+    <h1 class="catalog-title"><?php echo $title; ?></h1>
     <div class="wrapper">
 
-        <h1>
-			<?php
-			if ($section != null) {
-				echo "<a href='catalog.php'>Full Catalog</a> &gt; ";
-			}
-			echo $pageHeader;
-			?>
-        </h1>
-
+        <a href="catalog.php"><h3>Full Catalog </h3></a>
         <ul class="items">
-			<?php
-			$categoryItems = getItemsByCategory($catalog, $section);
-			foreach ($categoryItems as $id) {
-				echo getItem($id, $catalog[ $id ]);
-			}
-			?>
+            <?php
+            $categories = getItemsByCategory($catalog, $section);
+            foreach ($categories as $id) {
+                echo getThumbnail($id, $catalog[$id]);
+            } ?>
         </ul>
-
     </div>
-
 </div>
-
-<?php
-include "inc/footer.php";
-?>
+<?php include_once "inc/footer.php"; ?>
